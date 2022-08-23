@@ -11,6 +11,11 @@ body {
 
 h1, h2, h3 {
   font-size: 1rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  margin-bottom: 5px;
 }
 
 input, button {
@@ -45,9 +50,22 @@ input, button {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 769px) {
+  body {
+    height: unset;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 426px) {
+  .select-value--buttons {
+    grid-template-columns: 100px;
+    background-color: powderblue;
+  }
+}
 body {
   background-color: hsl(185deg, 41%, 84%);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -55,7 +73,7 @@ body {
 }
 
 header {
-  margin-bottom: 86px;
+  margin: 86px auto;
 }
 header img {
   margin: 0 auto;
@@ -63,8 +81,10 @@ header img {
 }
 
 main {
-  width: 920px;
-  height: 483px;
+  margin: 0 20px;
+  margin-bottom: 86px;
+  max-width: 920px;
+  min-height: 483px;
   background-color: white;
   display: flex;
   padding: 31px;
@@ -74,6 +94,9 @@ main {
 .input-values {
   flex: 1;
   padding: 14px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
 }
 
 .output-values {
@@ -97,4 +120,123 @@ main {
 .reset-active {
   opacity: 1;
   cursor: pointer;
+}
+.reset-active:checked {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: hsl(189deg, 41%, 97%);
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: right;
+  padding: 2px 1rem;
+  border: 2px solid transparent;
+}
+input::-moz-placeholder {
+  color: hsl(185deg, 41%, 84%);
+}
+input:-ms-input-placeholder {
+  color: hsl(185deg, 41%, 84%);
+}
+input::placeholder {
+  color: hsl(185deg, 41%, 84%);
+}
+
+.input-value-container {
+  position: relative;
+}
+
+.input-value-container::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  background-color: red;
+  background: url("../images//icon-dollar.svg") no-repeat;
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  left: 1rem;
+}
+
+.select-value--buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.select-value--buttons input {
+  cursor: pointer;
+}
+
+input[type=radio] {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+input[type=radio]:checked {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+input[type=radio]::after {
+  display: flex;
+  justify-content: center;
+}
+input[type=radio]:hover {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+#b5::after {
+  content: "5%";
+}
+
+#b10::after {
+  content: "10%";
+}
+
+#b15::after {
+  content: "15%";
+}
+
+#b25::after {
+  content: "25%";
+}
+
+#b50::after {
+  content: "50%";
+}
+
+#bcustom {
+  color: hsl(183deg, 100%, 15%);
+  height: 100%;
+  text-transform: capitalize;
+  padding: 0;
+  text-align: center;
+}
+#bcustom::-moz-placeholder {
+  color: hsl(186deg, 14%, 43%);
+}
+#bcustom:-ms-input-placeholder {
+  color: hsl(186deg, 14%, 43%);
+}
+#bcustom::placeholder {
+  color: hsl(186deg, 14%, 43%);
+}
+
+input[type=text] {
+  outline: none;
+  color: hsl(183deg, 100%, 15%);
+}
+input[type=text]:focus {
+  border: 2px solid hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }/*# sourceMappingURL=styles.css.map */

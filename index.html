@@ -21,24 +21,30 @@
     <div class="input-values">
       <article class="input-value--article">
         <h3 class="input-value--name">Bill</h3>
-        <input type="text" class="input-value--input" id="bill"></input>
+        <div class="input-value-container">
+          <input type="text" class="input-value--input" id="bill" placeholder="0"></input>
+        </div>
       </article>
 
       <div class="select-value">
         <h3 class="input-value--name">select tip %</h3>
         <div class="select-value--buttons">
-          <button class="select-value--button"></button>
-          <button class="select-value--button"></button>
-          <button class="select-value--button"></button>
-          <button class="select-value--button"></button>
-          <button class="select-value--button"></button>
-          <button class="select-value--button"></button>
+          <!-- <button class="select-value--button"></button> -->
+          <input type="radio" name="value-bottoms" id="b5" value="5">
+          <input type="radio" name="value-bottoms" id="b10" value="10">
+          <input type="radio" name="value-bottoms" id="b15" value="15">
+          <input type="radio" name="value-bottoms" id="b25" value="25">
+          <input type="radio" name="value-bottoms" id="b50" value="50">
+          <input type="text" name="value-bottoms" id="bcustom" placeholder="Custom">
+          
         </div>
       </div>
 
       <article class="input-value--article">
         <h3 class="input-value--name">number of people</h3>
-        <input type="text" class="input-value--button" id="number-of-people"></input>
+        <div class="input-value-container">
+          <input type="text" class="input-value--input" id="number-of-people" placeholder="0"></input>
+        </div>
       </article>
 
     </div>

@@ -1,0 +1,18 @@
+@media screen and (max-width: 769px) {
+
+    body{
+        height: unset;
+    }
+
+    main{
+        flex-direction: column;
+    }
+}
+
+@media screen and(max-width:426px ) {
+    .select-value--buttons{
+        grid-template-columns: 100px;
+        background-color: powderblue;
+    }
+    
+}
