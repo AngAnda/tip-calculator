@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+h1, h2, h3 {
+  font-size: 1rem;
+}
+
+input, button {
+  font: inherit;
+  font-size: 24px;
+}
+
+.input-values {
+  color: hsl(186deg, 14%, 43%);
+}
+
+.output-values {
+  color: hsl(0deg, 0%, 100%);
+  padding: 58px 37px;
+  padding-bottom: 37px;
+}
+.output-values--article {
+  display: flex;
+  justify-content: space-between;
+}
+.output-values .output-value--text {
+  text-transform: capitalize;
+}
+.output-values .output-values--person {
+  color: hsl(185deg, 41%, 84%);
+}
+.output-values .price {
+  font-size: 2.5rem;
+  color: hsl(172deg, 67%, 45%);
+}
+.output-values--reset {
+  text-transform: uppercase;
+}
+
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+header {
+  margin-bottom: 86px;
+}
+header img {
+  margin: 0 auto;
+  display: block;
+}
+
+main {
+  width: 920px;
+  height: 483px;
+  background-color: white;
+  display: flex;
+  padding: 31px;
+  border-radius: 25px;
+}
+
+.input-values {
+  flex: 1;
+  padding: 14px 19px;
+}
+
+.output-values {
+  flex: 1;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.output-values--reset {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  opacity: 0.3;
+}
+
+.reset-active {
+  opacity: 1;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,58 @@
+@import "./resets";
+@import "./typography";
+@import "./variables";
+
+body{
+    background-color:$gray-darkish ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+header{
+    margin-bottom: 86px;
+    & img{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+main{
+    width: 920px;
+    height: 483px;
+    background-color: white;
+    display: flex;
+    padding: 31px;
+    border-radius: 25px;
+}
+
+.input-values{
+    flex: 1;
+    padding: 14px 19px;
+}
+
+.output-values{
+    flex: 1;
+    background-color: $cyan-dark;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--reset{
+        width: 100%;
+        padding: 0.5rem 0;
+        border-radius: 5px;
+        border:none;
+        background-color: $cyan-strong;
+        color: $cyan-dark;
+        opacity: 0.3;
+    }
+}
+
+.reset-active{
+    opacity: 1;
+    cursor: pointer;
+}
