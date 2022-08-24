@@ -1,28 +1,12 @@
 @import "./resets";
 @import "./typography";
-@import "./variables";
 @import "./media-queries";
+@import "./input-values";
+@import "./output_values";
 
-@mixin click-light-green {
-    background-color: $gray-darkish;
-    color:$cyan-dark;
-}
-
-@mixin before{
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    position: absolute;
-    z-index: 2;
-    top:1.2rem;
-    left: 1rem;
-    position: absolute;    
-}
 
 body{
     background-color:$gray-darkish ;
-    //height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -38,11 +22,10 @@ header{
 }
 
 main{
-    //margin: 0 20px;
     margin-bottom: 86px;
     max-width: 920px;
     min-height: 483px;
-    background-color: white;
+    background-color: $bg-white;
     display: flex;
     padding: 31px;
     border-radius: 25px;
@@ -63,129 +46,4 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    &--reset{
-        width: 100%;
-        padding: 0.5rem 0;
-        border-radius: 5px;
-        border:none;
-        background-color: $cyan-strong;
-        color: $cyan-dark;
-        opacity: 0.3;
-    }
-}
-
-.reset-active{
-    opacity: 1;
-    cursor: pointer;
-    &:active{
-        @include click-light-green();
-    }
-}
-
-input{
-    width: 100%;
-    border:none;
-    background-color: $bg-input;
-    border-radius: 5px;
-    margin-top: 5px;
-    text-align: right;
-    padding: 2px 1rem;
-    border: 2px solid transparent;
-    &::placeholder{
-        color: $gray-darkish;
-    }
-}
-
-.input-value-container{
-    position: relative;
-}
-
-#bill::before{
-    @include before();
-    background: url("../images/icon-dollar.svg") no-repeat;
-}
-
-#number-of-people::before{
-    @include before();
-    background: url("../images/icon-person.svg") no-repeat;
-}
-
-.select-value--buttons{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:1rem;
-    & input{
-        cursor: pointer;
-    }
-}
-
-
-
-
-input[type="radio"]{
-   // background-color: red;
-    background-color: $cyan-dark;
-    color: $bg-input;
-    appearance: none;
-    width: auto;
-    height: 100%;
-    position: relative;
-    &:checked{
-        @include click-light-green();
-    }
-
-    &::after{
-        display: flex;
-        justify-content: center;
-    }
-
-    &:hover{
-        background-color: $cyan-strong;
-        color:$cyan-dark;
-    }
-}
-
-#b5::after{
-    content: "5%";
-}
-
-#b10::after{
-    content: "10%";
-}
-
-#b15::after{
-    content: "15%";
-}
-
-#b25::after{
-    content: "25%";
-}
-
-#b50::after{
-    content: "50%";
-}
-
-#bcustom{
-    color:$cyan-dark;
-    height: 100%;
-    text-transform: capitalize;
-    padding: 0;
-    text-align: center;
-    &::placeholder{
-        color:$gray-darkest;
-    }
-}
-
-input[type="text"]{
-    outline:none ;
-    color:$cyan-dark;
-    &:focus{
-        border:2px solid $cyan-strong;
-        color:$cyan-dark;
-    }
-}
-
-.output-values--article{
-    margin-bottom: 30px;
 }

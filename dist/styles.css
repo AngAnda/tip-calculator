@@ -69,67 +69,7 @@ input, button {
     width: 100%;
   }
 }
-body {
-  background-color: hsl(185deg, 41%, 84%);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  place-content: center;
-}
-
-header {
-  margin: 86px auto;
-}
-header img {
-  margin: 0 auto;
-  display: block;
-}
-
-main {
-  margin-bottom: 86px;
-  max-width: 920px;
-  min-height: 483px;
-  background-color: white;
-  display: flex;
-  padding: 31px;
-  border-radius: 25px;
-}
-
-.input-values {
-  flex: 1;
-  padding: 14px 19px;
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-}
-
-.output-values {
-  flex: 1;
-  background-color: hsl(183deg, 100%, 15%);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.output-values--reset {
-  width: 100%;
-  padding: 0.5rem 0;
-  border-radius: 5px;
-  border: none;
-  background-color: hsl(172deg, 67%, 45%);
-  color: hsl(183deg, 100%, 15%);
-  opacity: 0.3;
-}
-
-.reset-active {
-  opacity: 1;
-  cursor: pointer;
-}
-.reset-active:active {
-  background-color: hsl(185deg, 41%, 84%);
-  color: hsl(183deg, 100%, 15%);
-}
-
+/* Bill, Number of People */
 input {
   width: 100%;
   border: none;
@@ -148,10 +88,6 @@ input:-ms-input-placeholder {
 }
 input::placeholder {
   color: hsl(185deg, 41%, 84%);
-}
-
-.input-value-container {
-  position: relative;
 }
 
 #bill::before {
@@ -180,6 +116,11 @@ input::placeholder {
   background: url("../images/icon-person.svg") no-repeat;
 }
 
+.input-value-container {
+  position: relative;
+}
+
+/* select value buttons*/
 .select-value--buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -258,6 +199,68 @@ input[type=text]:focus {
   color: hsl(183deg, 100%, 15%);
 }
 
+.reset-active {
+  opacity: 1;
+  cursor: pointer;
+}
+.reset-active:active {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+
 .output-values--article {
   margin-bottom: 30px;
+}
+
+.output-values--reset {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  opacity: 0.3;
+}
+
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  place-content: center;
+}
+
+header {
+  margin: 86px auto;
+}
+header img {
+  margin: 0 auto;
+  display: block;
+}
+
+main {
+  margin-bottom: 86px;
+  max-width: 920px;
+  min-height: 483px;
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+  padding: 31px;
+  border-radius: 25px;
+}
+
+.input-values {
+  flex: 1;
+  padding: 14px 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.output-values {
+  flex: 1;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */

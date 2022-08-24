@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./mixins";
+
+
+.reset-active{
+    opacity: 1;
+    cursor: pointer;
+    &:active{
+        @include click-light-green();
+    }
+}
+
+
+.output-values--article{
+    margin-bottom: 30px;
+}
+
+
+.output-values--reset{
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    border:none;
+    background-color: $cyan-strong;
+    color: $cyan-dark;
+    opacity: 0.3;
+}
