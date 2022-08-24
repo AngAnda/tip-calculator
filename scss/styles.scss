@@ -14,7 +14,9 @@ body{
 }
 
 header{
-    margin: 86px auto;
+    margin: 0 auto;
+    margin-top: 161px;
+    margin-bottom: 86px;
     & img{
         margin: 0 auto;
         display: block;
@@ -33,6 +35,7 @@ main{
     display: flex;
     padding: 31px;
     border-radius: 25px;
+    box-shadow: 0rem 0 1rem $gray-dark2;
 }
 
 .input-values{

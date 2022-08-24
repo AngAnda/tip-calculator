@@ -30,11 +30,6 @@ input, button{
     padding: 58px 37px;
     padding-bottom: 37px;
 
-    &--article{
-        display: flex;
-        justify-content: space-between;
-    }
-
     & .output-values__person{
         color:$gray-darkish;
     }
@@ -44,7 +39,7 @@ input, button{
         color:$cyan-strong;
     }
 
-    &--reset{
+    &__reset{
         text-transform: uppercase;
     }
 }
