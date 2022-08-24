@@ -79,9 +79,7 @@ function tip(){
     tip_amount.innerText = "$" + tip_person.toFixed(2);
     total_person.innerHTML = "$" + (money_person + tip_person).toFixed(2);
     }
-    else{
-    alert("The tip value cannot be 0");
-    }
+
     check_reset();
 }
 

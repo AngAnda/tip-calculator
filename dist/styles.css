@@ -249,8 +249,12 @@ header img {
   display: block;
 }
 
+.attribution {
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+
 main {
-  margin-bottom: 86px;
   max-width: 920px;
   min-height: 483px;
   background-color: hsl(0deg, 0%, 100%);
