@@ -16,6 +16,7 @@ input{
     }
 }
 
+
 #bill::before{
     @include before();
     background: url("../images/icon-dollar.svg") no-repeat;
@@ -50,7 +51,7 @@ input[type="radio"]{
      width: auto;
      height: 100%;
      position: relative;
-     &:checked{
+     &.checked{
          @include click-light-green();
      }
  
@@ -63,7 +64,7 @@ input[type="radio"]{
          background-color: $cyan-strong;
          color:$cyan-dark;
      }
- }
+}
 
 #b5::after{
     content: "5%";
@@ -96,7 +97,7 @@ input[type="radio"]{
     }
 }
 
-input[type="text"]{
+input[type="number"]{
     outline:none ;
     color:$cyan-dark;
     &:focus{
@@ -105,3 +106,12 @@ input[type="text"]{
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+label{
+    visibility: hidden;
+    position: absolute;
+}

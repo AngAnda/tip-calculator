@@ -2,13 +2,7 @@
 @import "./mixins";
 
 
-.reset-active{
-    opacity: 1;
-    cursor: pointer;
-    &:active{
-        @include click-light-green();
-    }
-}
+
 
 
 .output-values--article{
@@ -24,4 +18,12 @@
     background-color: $cyan-strong;
     color: $cyan-dark;
     opacity: 0.3;
+}
+
+.reset-active{
+    opacity: 1;
+    cursor: pointer;
+    &:active{
+        @include click-light-green();
+    }
 }

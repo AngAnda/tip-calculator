@@ -14,7 +14,7 @@
 <body>
 
   <header>
-    <img src="./images/logo.svg" alt="">
+    <img src="./images/logo.svg" alt="Splitter logo">
   </header>
 
   <main>
@@ -22,7 +22,7 @@
       <article class="input-value--article">
         <h3 class="input-value--name">Bill</h3>
         <div class="input-value-container" id="bill">
-          <input type="text" class="input-value--input" placeholder="0"></input>
+          <input type="number" class="input-value--input" placeholder="0.00" id="bill--input"></input>
         </div>
       </article>
 
@@ -30,19 +30,19 @@
         <h3 class="input-value--name">select tip %</h3>
         <div class="select-value--buttons">
           <!-- <button class="select-value--button"></button> -->
-          <input type="radio" name="value-bottoms" id="b5" value="5">
-          <input type="radio" name="value-bottoms" id="b10" value="10">
-          <input type="radio" name="value-bottoms" id="b15" value="15">
-          <input type="radio" name="value-bottoms" id="b25" value="25">
-          <input type="radio" name="value-bottoms" id="b50" value="50">
-          <input type="text" name="value-bottoms" id="bcustom" placeholder="Custom">
+          <input type="radio" name="value-bottoms" id="b5" value="5"> <label for="b5">5%</label>
+          <input type="radio" name="value-bottoms" id="b10" value="10"> <label for="b10">10%</label>
+          <input type="radio" name="value-bottoms" id="b15" value="15"> <label for="b15">15%</label>
+          <input type="radio" name="value-bottoms" id="b25" value="25"> <label for="25">25%</label>
+          <input type="radio" name="value-bottoms" id="b50" value="50"> <label for="50">50%</label>
+          <input type="number" name="value-bottoms" id="bcustom" placeholder="Custom"><label for="bcustom" id="custom-label">Custom</label>
         </div>
       </div>
 
       <article class="input-value--article">
         <h3 class="input-value--name">number of people <span class="warning">Can't be zero</span> </h3>
         <div class="input-value-container" id="number-of-people">
-          <input type="text" class="input-value--input" placeholder="0"></input>
+          <input type="number" class="input-value--input" placeholder="0.00" id="number-of-people--input"></input>
         </div>
       </article>
 
@@ -55,7 +55,7 @@
             <h1 class="output-values--name">tip amount</h1>
             <p class="output-values--person">/person</p>
           </div>
-          <p class="price">
+          <p class="price" id="tip-person">
             $0.00
           </p>
         </article>
@@ -64,18 +64,19 @@
             <h2 class="output-values--name">total</h2>
             <p class="output-values--person">/person</p>
           </div>
-          <p class="price">
+          <p class="price" id="total-person">
             $0.00
           </p>
         </article>
       </div>
 
-      <button class="output-values--reset reset-active">reset</button>
+      <button class="output-values--reset ">reset</button>
     </div>
   </main>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="script.js"></script>
 </body>
 </html>
