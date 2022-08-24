@@ -34,7 +34,7 @@ input{
 
 /* select value buttons*/
 
-.select-value--buttons{
+.select-value__buttons{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1rem;

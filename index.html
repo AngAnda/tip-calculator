@@ -19,30 +19,29 @@
 
   <main>
     <div class="input-values">
-      <article class="input-value--article">
-        <h3 class="input-value--name">Bill</h3>
+      <article class="input-value__article">
+        <h3 class="input-value__name">Bill</h3>
         <div class="input-value-container" id="bill">
-          <input type="number" class="input-value--input" placeholder="0.00" id="bill--input"></input>
+          <input type="number" class="input-value__input" placeholder="0.00" id="bill--input"></input>
         </div>
       </article>
 
       <div class="select-value">
-        <h3 class="input-value--name">select tip %</h3>
-        <div class="select-value--buttons">
-          <!-- <button class="select-value--button"></button> -->
-          <input type="radio" name="value-bottoms" id="b5" value="5"> <label for="b5">5%</label>
-          <input type="radio" name="value-bottoms" id="b10" value="10"> <label for="b10">10%</label>
-          <input type="radio" name="value-bottoms" id="b15" value="15"> <label for="b15">15%</label>
-          <input type="radio" name="value-bottoms" id="b25" value="25"> <label for="25">25%</label>
-          <input type="radio" name="value-bottoms" id="b50" value="50"> <label for="50">50%</label>
-          <input type="number" name="value-bottoms" id="bcustom" placeholder="Custom"><label for="bcustom" id="custom-label">Custom</label>
+        <h3 class="input-value__name">select tip %</h3>
+        <div class="select-value__buttons">
+          <input type="radio" name="value-buttons" id="b5"> <label for="b5">5%</label>
+          <input type="radio" name="value-buttons" id="b10"> <label for="b10">10%</label>
+          <input type="radio" name="value-buttons" id="b15"> <label for="b15">15%</label>
+          <input type="radio" name="value-buttons" id="b25"> <label for="25">25%</label>
+          <input type="radio" name="value-buttons" id="b50"> <label for="50">50%</label>
+          <input type="number" name="value-buttons" id="bcustom" placeholder="Custom"><label for="bcustom" id="custom-label">Custom</label>
         </div>
       </div>
 
-      <article class="input-value--article">
-        <h3 class="input-value--name">number of people <span class="warning">Can't be zero</span> </h3>
+      <article class="input-value__article">
+        <h3 class="input-value__name">number of people <span class="warning">Can't be zero</span> </h3>
         <div class="input-value-container" id="number-of-people">
-          <input type="number" class="input-value--input" placeholder="0.00" id="number-of-people--input"></input>
+          <input type="number" class="input-value__input" placeholder="0.00" id="number-of-people__input"></input>
         </div>
       </article>
 
@@ -50,19 +49,19 @@
     <div class="output-values">
 
       <div class="output-values-info">
-        <article class="output-values--article" id="tip-amount">
-          <div class="output-value--text">
-            <h1 class="output-values--name">tip amount</h1>
-            <p class="output-values--person">/person</p>
+        <article class="output-values__article" id="tip-amount">
+          <div class="output-value__text">
+            <h1 class="output-values__name">tip amount</h1>
+            <p class="output-values__person">/person</p>
           </div>
           <p class="price" id="tip-person">
             $0.00
           </p>
         </article>
-        <article class="output-values--article" id="total">
-          <div class="output-value--text">
-            <h2 class="output-values--name">total</h2>
-            <p class="output-values--person">/person</p>
+        <article class="output-values__article" id="total">
+          <div class="output-value__text">
+            <h2 class="output-values__name">total</h2>
+            <p class="output-values__person">/person</p>
           </div>
           <p class="price" id="total-person">
             $0.00
@@ -70,7 +69,7 @@
         </article>
       </div>
 
-      <button class="output-values--reset ">reset</button>
+      <button class="output-values__reset ">reset</button>
     </div>
   </main>
     <div class="attribution">

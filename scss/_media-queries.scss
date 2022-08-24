@@ -8,8 +8,13 @@
         flex-direction: column;
     }
 
-    .input-values .select-value--buttons{
-        // grid-template-columns: unset;
+    main + .attribution{
+        text-align: center;
+        margin: 0 10px;
+        margin-bottom: 100px;
+    }
+    
+    .input-values .select-value__buttons{
         grid-template-columns: repeat(2, 1fr);
         & input{
             width: 50%;

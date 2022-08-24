@@ -36,7 +36,7 @@ input, button {
   display: flex;
   justify-content: space-between;
 }
-.output-values .output-values--person {
+.output-values .output-values__person {
   color: hsl(185deg, 41%, 84%);
 }
 .output-values .price {
@@ -60,10 +60,15 @@ input, button {
   main {
     flex-direction: column;
   }
-  .input-values .select-value--buttons {
+  main + .attribution {
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 100px;
+  }
+  .input-values .select-value__buttons {
     grid-template-columns: repeat(2, 1fr);
   }
-  .input-values .select-value--buttons input {
+  .input-values .select-value__buttons input {
     width: 50%;
   }
   .input-values input[type=radio], #bcustom {
@@ -122,12 +127,12 @@ input::placeholder {
 }
 
 /* select value buttons*/
-.select-value--buttons {
+.select-value__buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-.select-value--buttons input {
+.select-value__buttons input {
   cursor: pointer;
 }
 
@@ -210,11 +215,11 @@ label {
   position: absolute;
 }
 
-.output-values--article {
+.output-values__article {
   margin-bottom: 30px;
 }
 
-.output-values--reset {
+.output-values__reset {
   width: 100%;
   padding: 0.5rem 0;
   border-radius: 5px;
