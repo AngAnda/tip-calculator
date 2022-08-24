@@ -2,11 +2,10 @@
 @import "./mixins";
 
 
-
-
-
 .output-values__article{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
