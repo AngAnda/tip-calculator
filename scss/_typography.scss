@@ -35,10 +35,6 @@ input, button{
         justify-content: space-between;
     }
 
-    & .output-value--text{
-        text-transform: capitalize;
-    }
-
     & .output-values--person{
         color:$gray-darkish;
     }
@@ -53,4 +49,9 @@ input, button{
     }
 }
 
+
+.warning{
+    color:red;
+    float:right;
+}
 

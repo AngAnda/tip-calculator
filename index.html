@@ -21,8 +21,8 @@
     <div class="input-values">
       <article class="input-value--article">
         <h3 class="input-value--name">Bill</h3>
-        <div class="input-value-container">
-          <input type="text" class="input-value--input" id="bill" placeholder="0"></input>
+        <div class="input-value-container" id="bill">
+          <input type="text" class="input-value--input" placeholder="0"></input>
         </div>
       </article>
 
@@ -36,14 +36,13 @@
           <input type="radio" name="value-bottoms" id="b25" value="25">
           <input type="radio" name="value-bottoms" id="b50" value="50">
           <input type="text" name="value-bottoms" id="bcustom" placeholder="Custom">
-          
         </div>
       </div>
 
       <article class="input-value--article">
-        <h3 class="input-value--name">number of people</h3>
-        <div class="input-value-container">
-          <input type="text" class="input-value--input" id="number-of-people" placeholder="0"></input>
+        <h3 class="input-value--name">number of people <span class="warning">Can't be zero</span> </h3>
+        <div class="input-value-container" id="number-of-people">
+          <input type="text" class="input-value--input" placeholder="0"></input>
         </div>
       </article>
 
@@ -71,7 +70,7 @@
         </article>
       </div>
 
-      <button class="output-values--reset">reset</button>
+      <button class="output-values--reset reset-active">reset</button>
     </div>
   </main>
     <!-- <div class="attribution">

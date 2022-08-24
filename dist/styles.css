@@ -36,9 +36,6 @@ input, button {
   display: flex;
   justify-content: space-between;
 }
-.output-values .output-value--text {
-  text-transform: capitalize;
-}
 .output-values .output-values--person {
   color: hsl(185deg, 41%, 84%);
 }
@@ -50,6 +47,11 @@ input, button {
   text-transform: uppercase;
 }
 
+.warning {
+  color: red;
+  float: right;
+}
+
 @media screen and (max-width: 769px) {
   body {
     height: unset;
@@ -57,11 +59,14 @@ input, button {
   main {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 426px) {
-  .select-value--buttons {
-    grid-template-columns: 100px;
-    background-color: powderblue;
+  .input-values .select-value--buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .input-values .select-value--buttons input {
+    width: 50%;
+  }
+  .input-values input[type=radio], #bcustom {
+    width: 100%;
   }
 }
 body {
@@ -81,7 +86,6 @@ header img {
 }
 
 main {
-  margin: 0 20px;
   margin-bottom: 86px;
   max-width: 920px;
   min-height: 483px;
@@ -121,7 +125,7 @@ main {
   opacity: 1;
   cursor: pointer;
 }
-.reset-active:checked {
+.reset-active:active {
   background-color: hsl(185deg, 41%, 84%);
   color: hsl(183deg, 100%, 15%);
 }
@@ -150,17 +154,30 @@ input::placeholder {
   position: relative;
 }
 
-.input-value-container::before {
+#bill::before {
   content: "";
   width: 1rem;
   height: 1rem;
   display: inline-block;
-  background-color: red;
-  background: url("../images//icon-dollar.svg") no-repeat;
   position: absolute;
   z-index: 2;
-  top: 1rem;
+  top: 1.2rem;
   left: 1rem;
+  position: absolute;
+  background: url("../images/icon-dollar.svg") no-repeat;
+}
+
+#number-of-people::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 1.2rem;
+  left: 1rem;
+  position: absolute;
+  background: url("../images/icon-person.svg") no-repeat;
 }
 
 .select-value--buttons {
@@ -239,4 +256,8 @@ input[type=text] {
 input[type=text]:focus {
   border: 2px solid hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
+}
+
+.output-values--article {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */

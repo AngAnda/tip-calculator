@@ -8,6 +8,18 @@
     color:$cyan-dark;
 }
 
+@mixin before{
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    top:1.2rem;
+    left: 1rem;
+    position: absolute;    
+}
+
 body{
     background-color:$gray-darkish ;
     //height: 100vh;
@@ -26,7 +38,7 @@ header{
 }
 
 main{
-    margin: 0 20px;
+    //margin: 0 20px;
     margin-bottom: 86px;
     max-width: 920px;
     min-height: 483px;
@@ -66,7 +78,7 @@ main{
 .reset-active{
     opacity: 1;
     cursor: pointer;
-    &:checked{
+    &:active{
         @include click-light-green();
     }
 }
@@ -89,17 +101,14 @@ input{
     position: relative;
 }
 
-.input-value-container::before{
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    background-color: red;
-    background: url("../images//icon-dollar.svg") no-repeat;
-    position: absolute;
-    z-index: 2;
-    top:1rem;
-    left: 1rem;
+#bill::before{
+    @include before();
+    background: url("../images/icon-dollar.svg") no-repeat;
+}
+
+#number-of-people::before{
+    @include before();
+    background: url("../images/icon-person.svg") no-repeat;
 }
 
 .select-value--buttons{
@@ -175,4 +184,8 @@ input[type="text"]{
         border:2px solid $cyan-strong;
         color:$cyan-dark;
     }
+}
+
+.output-values--article{
+    margin-bottom: 30px;
 }
